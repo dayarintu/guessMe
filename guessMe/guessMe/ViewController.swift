@@ -24,11 +24,11 @@ class ViewController: UIViewController {
         if userGuess! <= 10  && userGuess! >= 1 {
             if enterNum.text == String(guessNum){
                 playSoundWhenCorrect()
-                resultLabel.text = "You are right !!"
+                resultLabel.text = "You are right !! ✅"
                 
             } else {
                 playSoundWhenWrong()
-                resultLabel.text = "You are wrong! Try again"
+                resultLabel.text = "You are wrong! 🚫 Try again"
                 enterNum.text = ""
                 
                 
