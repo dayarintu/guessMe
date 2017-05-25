@@ -16,6 +16,9 @@
 		F54B0AB11ED7786900281172 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B0AB01ED7786900281172 /* Sound.swift */; };
 		F54B0AB91ED7810100281172 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F54B0AB81ED7810100281172 /* correct.mp3 */; };
 		F54B0ABB1ED7810600281172 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F54B0ABA1ED7810600281172 /* wrong.mp3 */; };
+		F54B0AC11ED7878200281172 /* bg.jpg in Resources */ = {isa = PBXBuildFile; fileRef = F54B0AC01ED7878200281172 /* bg.jpg */; };
+		F54B0AC31ED789DD00281172 /* smile.png in Resources */ = {isa = PBXBuildFile; fileRef = F54B0AC21ED789DD00281172 /* smile.png */; };
+		F54B0AC51ED78B1300281172 /* guess.png in Resources */ = {isa = PBXBuildFile; fileRef = F54B0AC41ED78B1300281172 /* guess.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -30,6 +33,9 @@
 		F54B0AB01ED7786900281172 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
 		F54B0AB81ED7810100281172 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = correct.mp3; path = ../../../correct.mp3; sourceTree = "<group>"; };
 		F54B0ABA1ED7810600281172 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wrong.mp3; path = ../../../wrong.mp3; sourceTree = "<group>"; };
+		F54B0AC01ED7878200281172 /* bg.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; name = bg.jpg; path = ../../../../Downloads/bg.jpg; sourceTree = "<group>"; };
+		F54B0AC21ED789DD00281172 /* smile.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = smile.png; path = ../../../../Downloads/smile.png; sourceTree = "<group>"; };
+		F54B0AC41ED78B1300281172 /* guess.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = guess.png; path = ../../../../Downloads/guess.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +110,9 @@
 			children = (
 				F54B0AB81ED7810100281172 /* correct.mp3 */,
 				F54B0ABA1ED7810600281172 /* wrong.mp3 */,
+				F54B0AC41ED78B1300281172 /* guess.png */,
+				F54B0AC21ED789DD00281172 /* smile.png */,
+				F54B0AC01ED7878200281172 /* bg.jpg */,
 			);
 			name = Media;
 			sourceTree = "<group>";
@@ -169,9 +178,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				F54B0ABB1ED7810600281172 /* wrong.mp3 in Resources */,
+				F54B0AC31ED789DD00281172 /* smile.png in Resources */,
 				F54B0AA31ED76A1700281172 /* LaunchScreen.storyboard in Resources */,
+				F54B0AC51ED78B1300281172 /* guess.png in Resources */,
 				F54B0AA01ED76A1700281172 /* Assets.xcassets in Resources */,
 				F54B0A9E1ED76A1700281172 /* Main.storyboard in Resources */,
+				F54B0AC11ED7878200281172 /* bg.jpg in Resources */,
 				F54B0AB91ED7810100281172 /* correct.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

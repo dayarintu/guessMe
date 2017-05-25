@@ -21,14 +21,16 @@ class ViewController: UIViewController {
         
         let userGuess = Int(enterNum.text!)
         if userGuess != nil {
-        if userGuess! < 10  && userGuess! > 1 {
+        if userGuess! <= 10  && userGuess! >= 1 {
             if enterNum.text == String(guessNum){
                 playSoundWhenCorrect()
                 resultLabel.text = "You are right !!"
+                
             } else {
                 playSoundWhenWrong()
                 resultLabel.text = "You are wrong! Try again"
                 enterNum.text = ""
+                
                 
             }
             
@@ -38,7 +40,7 @@ class ViewController: UIViewController {
         }
         }
         else {
-            resultLabel.text = "Enter a number"
+            resultLabel.text = "Please enter a number"
         }
     }
 }

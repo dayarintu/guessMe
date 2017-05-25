@@ -21,26 +21,15 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="guessMe!" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nCd-Lj-OXp">
-                                <rect key="frame" x="69" y="56" width="237" height="49"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="29"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number between 1 - 10" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMk-Ge-6cR">
-                                <rect key="frame" x="52" y="142" width="285" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <nil key="textColor"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                <textInputTraits key="textInputTraits"/>
-                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="bg.jpg" highlightedImage="bgcolor2.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="Yyh-o6-3mK">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rj2-7h-abD">
-                                <rect key="frame" x="116" y="247" width="136" height="41"/>
+                                <rect key="frame" x="105" y="235" width="158" height="67"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="boldSystem" pointSize="26"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="42"/>
                                 <state key="normal" title="Guess ?">
-                                    <color key="titleColor" red="1" green="0.0" blue="0.50196081400000003" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
                                     <userDefinedRuntimeAttribute type="boolean" keyPath="keyPath" value="YES"/>
@@ -50,25 +39,47 @@
                                     <action selector="guessButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LPq-D4-JxC"/>
                                 </connections>
                             </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07K-zR-dpU">
-                                <rect key="frame" x="33" y="334" width="310" height="39"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Enter a valid number" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="07K-zR-dpU">
+                                <rect key="frame" x="5" y="359" width="359" height="81"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <nil key="textColor"/>
+                                <fontDescription key="fontDescription" name="Chalkduster" family="Chalkduster" pointSize="23"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Enter a number between 1 - 10" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="nMk-Ge-6cR">
+                                <rect key="frame" x="75" y="96" width="218.5" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" red="0.79754917512690349" green="0.5654572325518642" blue="0.28041919226822731" alpha="0.3827322345890411" colorSpace="custom" customColorSpace="sRGB"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="guess.png" translatesAutoresizingMaskIntoConstraints="NO" id="R1P-z7-Z95">
+                                <rect key="frame" x="118" y="469" width="139" height="190"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="Yyh-o6-3mK" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="T3S-jT-PrA"/>
+                            <constraint firstAttribute="trailing" secondItem="Yyh-o6-3mK" secondAttribute="trailing" id="bKM-ga-ALY"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="Yyh-o6-3mK" secondAttribute="bottom" id="fAQ-53-Sxq"/>
+                            <constraint firstItem="Yyh-o6-3mK" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="fHC-5Q-ko8"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="enterNum" destination="nMk-Ge-6cR" id="ALx-ip-ak0"/>
-                        <outlet property="guessMeLabel" destination="nCd-Lj-OXp" id="UNw-yO-CeK"/>
                         <outlet property="resultLabel" destination="07K-zR-dpU" id="gDQ-sK-4LO"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="852" y="-53"/>
+            <point key="canvasLocation" x="965.60000000000002" y="-72.413793103448285"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="bg.jpg" width="509" height="720"/>
+        <image name="bgcolor2.jpg" width="960" height="676"/>
+        <image name="guess.png" width="586" height="800"/>
+    </resources>
 </document>
