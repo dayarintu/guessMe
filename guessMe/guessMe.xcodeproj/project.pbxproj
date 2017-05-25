@@ -13,6 +13,9 @@
 		F54B0AA01ED76A1700281172 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F54B0A9F1ED76A1700281172 /* Assets.xcassets */; };
 		F54B0AA31ED76A1700281172 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F54B0AA11ED76A1700281172 /* LaunchScreen.storyboard */; };
 		F54B0AAB1ED76CB800281172 /* randomNum.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B0AAA1ED76CB800281172 /* randomNum.swift */; };
+		F54B0AB11ED7786900281172 /* Sound.swift in Sources */ = {isa = PBXBuildFile; fileRef = F54B0AB01ED7786900281172 /* Sound.swift */; };
+		F54B0AB91ED7810100281172 /* correct.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F54B0AB81ED7810100281172 /* correct.mp3 */; };
+		F54B0ABB1ED7810600281172 /* wrong.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = F54B0ABA1ED7810600281172 /* wrong.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,9 @@
 		F54B0AA21ED76A1700281172 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		F54B0AA41ED76A1700281172 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F54B0AAA1ED76CB800281172 /* randomNum.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = randomNum.swift; sourceTree = "<group>"; };
+		F54B0AB01ED7786900281172 /* Sound.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Sound.swift; sourceTree = "<group>"; };
+		F54B0AB81ED7810100281172 /* correct.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = correct.mp3; path = ../../../correct.mp3; sourceTree = "<group>"; };
+		F54B0ABA1ED7810600281172 /* wrong.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; name = wrong.mp3; path = ../../../wrong.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +63,7 @@
 		F54B0A971ED76A1700281172 /* guessMe */ = {
 			isa = PBXGroup;
 			children = (
+				F54B0AB61ED77AFE00281172 /* Media */,
 				F54B0AAC1ED7755C00281172 /* Model */,
 				F54B0AAE1ED775A000281172 /* View */,
 				F54B0AAD1ED7758500281172 /* Controller */,
@@ -67,6 +74,7 @@
 		F54B0AAC1ED7755C00281172 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				F54B0AB01ED7786900281172 /* Sound.swift */,
 				F54B0AAA1ED76CB800281172 /* randomNum.swift */,
 			);
 			name = Model;
@@ -89,6 +97,15 @@
 				F54B0AA41ED76A1700281172 /* Info.plist */,
 			);
 			name = View;
+			sourceTree = "<group>";
+		};
+		F54B0AB61ED77AFE00281172 /* Media */ = {
+			isa = PBXGroup;
+			children = (
+				F54B0AB81ED7810100281172 /* correct.mp3 */,
+				F54B0ABA1ED7810600281172 /* wrong.mp3 */,
+			);
+			name = Media;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -151,9 +168,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F54B0ABB1ED7810600281172 /* wrong.mp3 in Resources */,
 				F54B0AA31ED76A1700281172 /* LaunchScreen.storyboard in Resources */,
 				F54B0AA01ED76A1700281172 /* Assets.xcassets in Resources */,
 				F54B0A9E1ED76A1700281172 /* Main.storyboard in Resources */,
+				F54B0AB91ED7810100281172 /* correct.mp3 in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -167,6 +186,7 @@
 				F54B0AAB1ED76CB800281172 /* randomNum.swift in Sources */,
 				F54B0A9B1ED76A1700281172 /* ViewController.swift in Sources */,
 				F54B0A991ED76A1700281172 /* AppDelegate.swift in Sources */,
+				F54B0AB11ED7786900281172 /* Sound.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
